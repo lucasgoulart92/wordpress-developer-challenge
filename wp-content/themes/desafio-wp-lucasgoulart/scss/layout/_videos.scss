@@ -1,0 +1,35 @@
+.videos {
+    @extend .flex-galeria;
+    padding: 0 10px 20px 10px;
+    &__item {
+        width: 149px;
+        margin: 0 10px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        &__poster {
+            width: 149px;
+            height: 232px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 3px;
+            margin-bottom: 22px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+        }
+        @media(min-width: 1024px) {
+            width: 248px;
+            &__poster {
+                width: 248px;
+                height: 387px;
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding-left: 60px;
+    }
+}

@@ -1,0 +1,32 @@
+.archive {
+    @extend .flex-column-center;
+    &-txt {
+        width: 316px;
+        .tag-description {
+            margin: 38px 0;
+        }
+    }
+    .archive-videos {
+        @extend .flex-row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        .videos__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
+        &-txt {
+            max-width: 640px;
+        }
+        .archive-videos {
+            padding-top: 60px;
+            max-width: 1065px;
+        }
+    }
+}

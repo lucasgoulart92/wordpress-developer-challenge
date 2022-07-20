@@ -1,0 +1,25 @@
+.single {
+    &__txt {
+        padding: 20px;
+    }
+    iframe {
+        height: 280px;
+    }
+    @media(min-width: 1024px) {
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__txt {
+            width: 944px;
+            margin: 70px 0;
+        }
+        iframe {
+            height: 640px;
+
+            @media(min-width: 1650px) {
+                height: 820px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.home {
+    padding-bottom: 120px;
+    &__destaque {
+        &__item {
+            padding: 20px;
+            height: 580px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @extend .flex-column-left;
+
+            @media(min-width: 1024px) {
+                height: 1000px;
+                padding: 0 60px;
+            }
+        }
+    }
+}
+
+.destaque-infos {
+    display: flex;
+    h4 {
+        margin-right: 10px;
+    }
+}

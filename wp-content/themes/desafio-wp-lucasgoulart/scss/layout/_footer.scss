@@ -1,0 +1,16 @@
+footer {
+    @extend .flex-column-center;
+    padding: 120px 0 160px 0;
+    p {
+        font-size: 12px;
+        font-family: $font-med;
+        margin-top: 26px;
+    }
+    @media(min-width: 1024px) {
+        align-items: flex-start;
+        padding-left: 40px;
+        p {
+            font-size: 18px;
+        }
+    }
+}

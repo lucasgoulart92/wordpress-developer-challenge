@@ -1,0 +1,35 @@
+.assistir {
+    position: block;
+    width: 182px;
+    height: 38px;
+    color: $white;
+    background-color: $red;
+    font-family: $font-book;
+    font-size: 12px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    @extend .flex-row;
+
+    &:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+}
+
+.button-duration {
+    width: 110px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid $white;
+    color: $white;
+    @extend .flex-row;
+}
+
+.button-classificacao {
+    @extend .button-duration;
+    background-color: $white;
+    a {
+        color: $gray;
+        font-size: 12px;
+    }
+}

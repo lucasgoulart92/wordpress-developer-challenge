@@ -1,0 +1,29 @@
+/*
+Theme Name: Play
+Author: Lucas dos Santos Goulart
+Version: 1.0
+Text Domain: bx-desafio
+Global Prefix: bx_desafio_
+*/
+
+// BASE
+@import 'scss/base/typography';
+@import 'scss/base/colors';
+@import 'scss/base/normalize';
+@import 'scss/base/reset';
+
+// LAYOUT
+@import 'scss/layout/flex';
+@import 'scss/layout/header';
+@import 'scss/layout/footer';
+@import 'scss/layout/videos';
+
+// COMPONENTS
+@import 'scss/components/titles';
+@import 'scss/components/tags';
+@import 'scss/components/buttons';
+
+// PAGES
+@import 'scss/pages/home';
+@import 'scss/pages/single';
+@import 'scss/pages/archive';

@@ -1,0 +1,44 @@
+header {
+    a.header-logo {
+        @extend .flex-row;
+        width: 100%;
+        height: 83px;
+    }
+    nav.header-classificacao {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 83px;
+        background-color: $black;
+        @extend .flex-row;
+        justify-content: space-around;
+        a {
+            @extend .flex-column-center;
+            font-size: 9px;
+            svg {
+                margin-bottom: 10px;
+            }
+            &:hover {
+                color: $red;
+                fill: $red;
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        a.header-logo {
+            width: 103px;
+        }
+        nav.header-classificacao {
+            position: relative;
+            width: 340px;
+            a {
+                font-size: 19px;
+                svg {
+                display: none;
+                }
+            }
+        }
+    }
+}
